@@ -2,109 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "noir",
-  niche: "lawfirm",
-  name: "Caldwell & Associates",
-  tagline: "Fighting For You. Every Case. Every Time.",
-  phone: "(555) 567-8901",
-  phoneHref: "tel:+15555678901",
-  email: "hello@caldwelllaw.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Modesto", "Sacramento", "San Jose", "Oakland"],
-  license: "California State Bar #456789",
-  since: "2003",
-  google_rating: "4.9",
-  review_count: "156",
-  emergency: true,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "San Diego Law Firm, APC",
+    tagline: "Justice for Your Personal Injury",
+    phone: "(619) 900-0000",
+    phoneHref: "tel:+16199000000",
+    email: "info@sandiegolawfirm.com",
+    address: "123 Main St",
+    city: "San Diego",
+    serviceAreas: ["San Diego", "Chula Vista", "Oceanside", "Escondido"],
+    license: "California Bar #123456",
+    since: "2005",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "navy",
+    niche: "lawfirm",
+  },
 
   services: [
-  { icon: "car", title: "Personal Injury", desc: "Car accidents, slip & fall, workplace injuries. No fee unless we win. Maximum compensation for your suffering.", urgent: true },
-  { icon: "users", title: "Family Law", desc: "Divorce, child custody, spousal support, and adoption. Protecting your family's future with compassion and strength.", urgent: false },
-  { icon: "shield", title: "Criminal Defense", desc: "DUI, drug charges, assault, theft. We defend your rights aggressively from arrest through trial.", urgent: true },
-  { icon: "briefcase", title: "Business Law", desc: "Contracts, partnerships, LLC formation, disputes. Legal protection for every stage of your business.", urgent: false },
-  { icon: "file-text", title: "Estate Planning", desc: "Wills, trusts, power of attorney, and probate. Secure your legacy and protect your loved ones.", urgent: false },
-  { icon: "globe", title: "Immigration Law", desc: "Visas, green cards, citizenship, deportation defense. Navigating complex immigration with decades of experience.", urgent: false },
-],
+    { icon: "shield-check", title: "Personal Injury Law", desc: "Aggressive representation for all types of personal injury claims.", urgent: false },
+    { icon: "heart", title: "Wrongful Death Attorney", desc: "Compassionate legal support for families who have lost a loved one due to negligence.", urgent: false },
+    { icon: "briefcase", title: "Sexual Harassment Lawyer", desc: "Protecting your rights and seeking justice in workplace sexual harassment cases.", urgent: false },
+    { icon: "truck", title: "Auto Accident Lawyer", desc: "Expert legal counsel for victims of car, truck, and motorcycle accidents.", urgent: false },
+    { icon: "wrench", title: "E-bike Collision Representation", desc: "Specialized legal help for injuries sustained in e-bike accidents.", urgent: false },
+    { icon: "award", title: "Sexual Assault Representation", desc: "Dedicated advocacy for survivors of sexual assault, seeking accountability and compensation.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "David R.", location: "Tracy, CA", stars: 5, text: "After my car accident, I was overwhelmed. Caldwell & Associates handled everything — insurance, medical bills, settlement. Got 3x what the insurance offered." },
-  { name: "Maria G.", location: "Stockton, CA", stars: 5, text: "Went through a difficult divorce with children involved. They fought hard for my custody rights while being sensitive to the emotional toll. Couldn't have done it without them." },
-  { name: "James T.", location: "Modesto, CA", stars: 5, text: "Faced criminal charges that could have ruined my career. They had the charges dismissed. Professional, responsive, and genuinely cared about my outcome." },
-],
+    { name: "Maria S.", location: "San Diego", stars: 5, text: "After my car accident, I was overwhelmed. San Diego Law Firm, APC, handled everything with such professionalism and care. They secured a settlement that covered all my medical bills and lost wages. I felt truly supported throughout the entire process." },
+    { name: "David L.", location: "Chula Vista", stars: 5, text: "My wrongful death case was incredibly sensitive, but the team at San Diego Law Firm, APC, treated my family with the utmost respect and compassion. Their strategic advocacy brought us a sense of closure and justice we desperately needed." },
+    { name: "Jessica P.", location: "Oceanside", stars: 5, text: "I faced a difficult sexual harassment situation at work. This firm provided unwavering support and expert legal guidance. They fought tirelessly for my rights and achieved a positive outcome, allowing me to move forward with my life." }
+  ],
 
   trustBadges: [
-  "20+ Years Experience", "No Fee Unless We Win", "Free Consultations",
-  "AV Preeminent Rated", "Super Lawyers 2024", "1,000+ Cases Won"
-],
+    "California Bar Licensed", "Free Case Review", "Client-Focused Advocacy", "No Win, No Fee", "Deep Community Roots", "Experienced Litigators"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 780,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 23,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 1000, label: "Cases Won", suffix: "+", decimals: 0 },
+    { value: 18, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Intake 24/7",
-    "desc": "AI answers calls and texts around the clock — qualifies leads, schedules consultations, and captures case details before your team follows up."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "clock", title: "Fast Response", desc: "We act quickly to protect your rights and gather crucial evidence." },
+    { icon: "dollar-sign", title: "No Win, No Fee", desc: "You pay nothing unless we win your case." },
+    { icon: "award", title: "Experienced Litigators", desc: "Our attorneys have a proven track record of success in court." },
+    { icon: "thumbs-up", title: "Client-Focused", desc: "We provide personalized guidance and unwavering support for every client." },
+    { icon: "phone", title: "Free Consultation", desc: "Discuss your case with an attorney at no cost or obligation." },
+    { icon: "shield-check", title: "Aggressive Advocacy", desc: "We fight tirelessly to secure the compensation and justice you deserve." }
+  ],
 
-  formServiceOptions: [
-  "Personal Injury",
-  "Family Law",
-  "Criminal Defense",
-  "Business Law",
-  "Estate Planning",
-  "Immigration Law"
-],
+  formServiceOptions: ["Personal Injury Law", "Wrongful Death Attorney", "Sexual Harassment Lawyer", "Auto Accident Lawyer", "E-bike Collision Representation", "Sexual Assault Representation"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
